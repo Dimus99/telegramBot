@@ -3,7 +3,7 @@ import telebot
 from functions import *
 from keyboards import *
 bot = telebot.TeleBot(TOKEN)
-LizaUserName = 'BaglashaL'
+LizaUserName = '/////\\'
 
 #bot body
 WriteLog('good start')
