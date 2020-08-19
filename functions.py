@@ -6,7 +6,7 @@ def sendToUser(bot, message, id_user, keyboard=None):
         WriteLog(f'error with send message to {id_user}')
 
 def WriteLog(messLog, bot=None):
-    DimaId=304228579
+    DimaId=304228579 # лучше вынести в конфиг
     if bot!=None:
         sendToUser(bot, 'Console: '+messLog, DimaId)
 
