@@ -3,7 +3,7 @@ import telebot
 from functions import *
 from keyboards import *
 bot = telebot.TeleBot(TOKEN)
-LizaUserName = '/////\\'
+LizaUserName = ''
 
 #bot body
 WriteLog('good start')
@@ -16,7 +16,7 @@ def HelloUser(message):
 @bot.callback_query_handler(func=lambda call: True)
 def AnserForCall(call):
     WriteLog('call '+call.data+' @'+str(call.from_user.username))
-    if call.data == 'нахуй':
+    if call.data == 'бесконечность':
         with open('besk-besk.jpg','rb') as img:
             sendImgToUser(bot, img, call.from_user.id)
 
